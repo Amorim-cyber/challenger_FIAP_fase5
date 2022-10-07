@@ -19,7 +19,7 @@ Este documento ilustra nossa proposta de solução, vamos dividi-lo nos seguinte
 
 <h3>(1) Nossa aplicação</h3>
 
-Desenvolvemos um protótipo em aplicativo de celular. Incluímos dois tipos de usuários: `Clientes`, representando os residentes e `Funcionários`, responsáveis pela coleta.
+Desenvolvemos um protótipo em aplicativo de celular `android`. Incluímos dois tipos de usuários: `Clientes`, representando os residentes e `Funcionários`, responsáveis pela coleta.
 
 Dentro da área de cliente, o usuário registra seu nome e a localização da sua residência. O registro fica salvo na memoria corrente da aplicação e pode ser recuperada. Em outras palavras, caso ele tenha salvo seu acesso e voltado para a tela inicial, há a possibilidade de rever os dados, desde que seja informado seu nome cadastrado exato. Também incluímos a possibilidade de edição dos dados, caso o residente deseje.
 
@@ -94,6 +94,43 @@ Pensamos na seguinte ideia:
 <hr>
 
 <h3>(5) Como abrir o programa em sua maquina</h3>
+
+Antes de partir para o passo a passo é importante dizer que todo o processo foi desenvolvido utilizando o sistema operacional do `Windows`, portanto vamos mostrar a instalação utilizando este mesmo sistema.  
+
+Siga os seguintes passos para poder rodar o projeto em sua maquina:
+
+1. Entre na página do projeto no <a href="https://github.com/Amorim-cyber/challenger_FIAP_fase5" >github</a>. Clique no botão <i style="color:green" >Code</i> e selecione a opção de realizar o download via arquivo compactado (ZIP).
+
+   <img src="assets/install1.png" >
+
+2. O arquivo .zip será baixado e vai aparecer na sua pasta de downloads. Acesse a pasta e clique com o botão direto do mouse e em seguida clique em extrair tudo ou na opção de descompactar dependendo da versão de seu sistema operacional. Fique a vontade para escolher o diretório aonde o arquivo será posto, nesta demonstração vou deixa-lo dentro da pasta de downloads .
+
+   <img src="assets/install2.png" >
+
+3. Abra o `android studios` ou qualquer outra IDE de sua escolha. Neste caso clique em file no canto direito superior da tela e em seguida em Open... . Vai parece uma tela de busca de arquivos, encontre o caminho aonde foi deixado o arquivo e clique nele para abrir o projeto. Aperte a setinha verde indicada no <i style="color:red">retângulo</i> para iniciar a aplicação. Por nota, pode ser que você precise criar um emulador dependendo da versão do seu android studios. 
+
+   <img src="assets/install3.png" >
+
+4. Por motivos de segurança não estamos disponibilizando a `api key` do google maps. Para ter um aproveitamento completo da aplicação recomendamos que crie uma api key no <a href="https://developers.google.com/maps/documentation/embed/get-api-key#:~:text=Go%20to%20the%20Google%20Maps%20Platform%20%3E%20Credentials%20page.&text=On%20the%20Credentials%20page%2C%20click,Click%20Close.">google maps plataform</a>. Quando tiver a chave em mãos vai no arquivo <a href="local.properties" >local.properties</a> do projeto e coloque-a na variável `MAPS_API_KEY`. 
+
+   <img src="assets/install4.png" >
+
+<hr>
+
+<h3>(6) Conclusão</h3>
+
+Desenvolvemos um prototipo de solução para as determinadas questões:
+
+1. <b>Localizar os pontos de coleta:</b> A medida que os cliente vão se cadastrando na plataforma, a empresa terá as informações sobre aonde coletar.
+2. <b>Informar a data e o horário de coleta:</b> No momento que o funcionário sai para fazer a coleta, o cliente terá as informações sobre os dias e horários.
+3. <b>Acompanhamento em tempo real:</b>Foi demonstrado de forma manual que conforme o funcionário vai atualizando sua localização, o cliente terá a informação atualizada no momento da consulta.
+4. <b>Rota sugerida:</b> Implementamos ferramentas do google maps que traçam a melhor rota entre o funcionário e um determinado ponto de coleta. 
+
+Todos os pontos foram testados e demonstrados no nosso <a href="assets/video_demo.mp4" >vídeo</a> disponível.
+
+Além disso fornecemos uma possível solução para motivar o publico a utilizar o aplicativo. 
+
+Acreditamos que conseguimos cumprir com o que foi proposto pela <b><i>Garbage SA</i></b>.
 
 
 
