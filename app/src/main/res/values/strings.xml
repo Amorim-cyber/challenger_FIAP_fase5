@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Re.ciclo</string>
+    <string name="title_activity_maps_client">MapsActivityClient</string>
+    <string name="title_activity_maps_worker">MapsActivityWorker</string>
 </resources>
